@@ -1,32 +1,34 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
  * main - Prints all possible different combinations of two two-digit numbers
  * Return: Always 0 (Success)
  */
-int main(void)
-{
-int i, j;
 
-for (i = 0; i < 100; i++)
+int main(void)
+
 {
-for (j = 0; j < 100; j++)
+
+int p, q;
+
+for (p = 0; p <= 98; p++)
 {
-if (i < j)
+
+for (q = p + 1; q <= 99; q++)
 {
-putchar((i / 10) + 48);
-putchar((i % 10) + 48);
+putchar((p / 10) + '0');
+putchar((p % 10) + '0');
 putchar(' ');
-putchar((j / 10) + 48);
-putchar((j % 10) + 48);
-if (i != 98 || j != 99)
-{
+putchar((q / 10) + '0');
+putchar((q % 10) + '0');
+if (p == 98 && q == 99)
+continue;
 putchar(',');
 putchar(' ');
 }
 }
-}
-}
-putchar('\n')
+putchar('\n');
 return (0);
 }

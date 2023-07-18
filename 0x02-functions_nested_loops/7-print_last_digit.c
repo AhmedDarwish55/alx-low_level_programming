@@ -17,6 +17,6 @@ if (last < 9)
 {
 last = last * -1;
 }
-_putchar(last * '0');
+_putchar(last + '0');
 return (last);
 }

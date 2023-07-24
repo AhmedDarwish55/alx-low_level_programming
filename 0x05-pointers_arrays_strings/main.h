@@ -20,4 +20,4 @@ void print_array(int *a, int n);
 
 char *_strcpy(char *dest, char *src);
 
-int _atoil(char *s);
+int _atoi(char *s);

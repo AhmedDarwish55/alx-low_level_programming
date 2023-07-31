@@ -1,7 +1,6 @@
 #include "main.h"
 
 /**
-
  * _memcpy - Entry point
  * @dest: input
  * @src: input
@@ -16,8 +15,6 @@ unsigned int i;
 
 for (i = 0; i < n; i++)
 dest[i] = src[i];
-
-}
 
 return (dest);
 }

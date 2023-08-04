@@ -7,10 +7,10 @@
  * main - prints the sum of args positive numbers
  * @argc: argument count
  * @argv: argument vector
- * Return: Always 0.
+ * Return: Always zero.
  */
 
-int main(int argc, char const *argv[])
+int main(int argc, char *argv[])
 {
 int i;
 unsigned int k, sum = 0;

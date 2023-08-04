@@ -10,13 +10,13 @@
  * otherwise - 0.
  */
 
-int main(int argc, char const *argv[])
+int main(int argc, char *argv[])
 {
 int cents, coins = 0;
 
 if (argc != 2)
 {
-printf("%Error\n");
+printf("Error\n");
 return (1);
 }
 cents = atoi(argv[1]);

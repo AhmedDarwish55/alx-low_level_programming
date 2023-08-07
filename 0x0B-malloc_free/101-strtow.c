@@ -25,7 +25,7 @@ return (len);
 }
 
 /**
- * count_word - counts the number of words contained within a string
+ * count_words - counts the number of words contained within a string
  * @str: the string to be searched.
  *
  * Return: the number of words contained within str.

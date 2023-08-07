@@ -26,7 +26,7 @@ i++;
 while (s2[j])
 j++;
 l = i + j;
-s = malloc((sizeof(char) * l) + 1);
+s = malloc((sizeof(char) * l) +1);
 
 if (s == NULL)
 return (NULL);
@@ -41,6 +41,7 @@ s[k] = s1[k];
 if (k >= i)
 {
 s[k] = s2[j];
+j++;
 }
 k++;
 }

@@ -36,6 +36,8 @@ k = 0;
 while (j < l)
 {
 if (j <= i)
+str[j] = s1[j];
+if (j >= i)
 {
 str[j] = s2[k];
 k++;

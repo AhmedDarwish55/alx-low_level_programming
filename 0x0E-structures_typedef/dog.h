@@ -2,13 +2,14 @@
 #define _HEADER_
 
 /**
- * struct_dog - Dog attributes
+ * struct dog - Dog attributes
  * @name: The name of the dog
- * @age: the age of the dog
  * @owner: the owner of the dog
+ * @age: the age of the dog
  *
  * Description: The attributes of the dog
  */
+
 struct dog
 {
 char *name;

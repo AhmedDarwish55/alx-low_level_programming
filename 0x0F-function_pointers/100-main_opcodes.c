@@ -3,7 +3,7 @@
 
 /**
  * main - Prints the opcodes of itself.
- * Description: main
+ * Description: opcodes
  * @argc: The number of arguments supplied to the program.
  * @argv: An array of pointers to the arguments.
  *

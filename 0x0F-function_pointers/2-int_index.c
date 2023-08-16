@@ -1,7 +1,7 @@
 #include "function_pointers.h"
 
 /**
- * int_index
+ * int_index - ...
  * @array: ...
  * @size: ...
  * @cmp: ...
@@ -21,6 +21,7 @@ while (i < size)
 {
 if (cmp(array[i]))
 return (i);
+
 i++;
 }
 }

@@ -2,12 +2,14 @@
 #include <stdlib.h>
 
 /**
- * main - prints the opcodes of itself
- * @argc: the number of arguments
- * @argv: an array of pointers
+ * main - Prints the opcodes of itself.
+ * Description: main
+ * @argc: The number of arguments supplied to the program.
+ * @argv: An array of pointers to the arguments.
  *
- * Returns: Always 0.
+ * Returns: Always 0 (Success).
  */
+
 int main(int argc, char *argv[])
 {
 int bytes, index;

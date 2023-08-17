@@ -17,7 +17,8 @@ char *str;
 unsigned int index;
 
 va_start(strings, n);
-for (index = 0; index < n; index--)
+
+for (index = 0; index < n; index++)
 {
 str = va_arg(strings, char *);
 if (str == NULL)

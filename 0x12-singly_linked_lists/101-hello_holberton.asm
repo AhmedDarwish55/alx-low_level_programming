@@ -1,3 +1,4 @@
+section 	.text
 global		main
 		extern		printf
 main:
@@ -6,5 +7,7 @@ main:
 		call 	printf
 		mov 	eax, 0
 		ret
-format: db 'Hello, Holberton\n',0
+
+section 	.data
+	msg db 'Hello, Holberton\n', 0xa, 0
 

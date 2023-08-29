@@ -1,8 +1,8 @@
 #include "lists.h"
 
 /**
- * free_listint2 - ...
- * @head: ...
+ * free_listint2 - frees the list
+ * @head: address of pointer
  *
  * Return: void
  */
@@ -14,10 +14,11 @@ if (!head)
 return;
 node = *head;
 
-while (head)
+while (node)
 {
-node = node->next;
+
 n = node;
+node = node->next;
 free(n);
 }
 *head = NULL;

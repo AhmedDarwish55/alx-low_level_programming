@@ -9,32 +9,32 @@
  * @size: size of list
  * @fresh: new node of the list
  *
- * Return: ...
+ * Return: pointer to the new list
  */
 
-const listint_t **re(const listint_t **list, size_t size,
+const listint_t **_r(const listint_t **list, size_t size,
 		const listint_t *fresh)
 {
-const listint_t **new_list;
+const listint_t **newlist;
 size_t i;
-new_list = malloc(size = sizeof(listint_t *));
-if (new_list == NULL)
+newlist = malloc(size * sizeof(listint_t *));
+if (newlist == NULL)
 {
 free(list);
 exit(98);
 }
 for (i = 0; i < size - 1; i++)
-new_list[i] = list[i];
-new_list[i] = fresh;
+newlist[i] = list[i];
+newlist[i] = fresh;
 free(list);
-return (new_list);
+return (newlist);
 }
 
 /**
  * print_listint_safe - prints
- * @head: ...
+ * @head: pointer
  *
- * Return: ...
+ * Return: the number of nodes
  */
 size_t print_listint_safe(const listint_t *head)
 {
@@ -53,7 +53,7 @@ return (j);
 }
 }
 j++;
-list = re(list, j, head);
+list = _r(list, j, head);
 printf("[%p] %d\n", (void *)head, head->n);
 head = head->next;
 }

@@ -6,13 +6,13 @@
  *
  * Return: size of list
  */
-size_t print_listint(const listint_t *k)
+size_t print_listint(const listint_t *j)
 {
 size_t i = 0;
-while (k)
+while (j)
 {
 printf("%d\n", k->n);
-k = k->next;
+j = j->next;
 i++;
 }
 return (i);

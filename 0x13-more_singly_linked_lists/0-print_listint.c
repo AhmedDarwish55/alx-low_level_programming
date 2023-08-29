@@ -1,8 +1,11 @@
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
 #include "lists.h"
 
 /**
  * print_listint - prints linked list
- * @k: pointer
+ * @h: pointer
  *
  * Return: size of list
  */

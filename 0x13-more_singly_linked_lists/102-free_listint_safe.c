@@ -4,14 +4,16 @@
 #include "lists.h"
 
 /**
- * find_listint_loop_f - find a loop
+ * find_listint_loop_fl - find a loop in a list
+ *
  * @head: pointer of linked list
  *
- * Return: address of the node
+ * Return: address of the node where loop start, NULL if no loop
  */
-listint_t *find_listint_loop_f(listint_t *head)
+listint_t *find_listint_loop_fl(listint_t *head)
 {
-listint_t *last, *ptr;
+listint_t *ptr, *last;
+
 if (head == NULL)
 return (NULL);
 
@@ -27,9 +29,9 @@ return (NULL);
 }
 /**
  * free_listint_safe - ...
- * @h: ...
+ * @h: head of list
  *
- * Return: ..
+ * Return: number of nodes free
  */
 size_t free_listint_safe(listint_t **h)
 {
@@ -38,7 +40,7 @@ size_t length;
 int loop = 1;
 if (h == NULL || *h == NULL)
 return (0);
-loopnode = find_listint_loop_f(*h);
+loopnode = find_listint_loop_fl(*h);
 for (length = 0; (*h != loopnode || loop) && *h != NULL; *h = next)
 {
 length++;

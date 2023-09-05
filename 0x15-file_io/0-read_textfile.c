@@ -1,15 +1,12 @@
 #include "main.h"
-#include <unistd.h>
-#include <fcntl.h>
-#include <stdio.h>
-#include <stdlib.h>
+
 
 /**
  * read_textfile - reads text
- * @letters: ...
- * @filename: ...
+ * @filename: name of the file
+ * @letters: number of bytes
  *
- * Return: ...
+ * Return: number bytes read/printed
  */
 
 ssize_t read_textfile(const char *filename, size_t letters)

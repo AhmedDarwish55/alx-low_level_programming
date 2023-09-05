@@ -1,8 +1,8 @@
 #include "main.h"
 #define USAGE "Usage: cp file_from file_to\n"
-#define ERR_NOREAD "Error: Can’t read from file %s\n"
-#define ERR_NOWRITE "Error: Can’t write to file %s\n"
-#define ERR_NOCLOSE "Error: Can’t close fd file %d\n"
+#define ERR_NOREAD "Error: Can't read from file %s\n"
+#define ERR_NOWRITE "Error: Can't write to %s\n"
+#define ERR_NOCLOSE "Error: Can't close fd %d\n"
 #define PERMISSIONS (S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH)
 
 /**
@@ -13,7 +13,7 @@
  * Return: 1 on true 0 on false
  */
 int main(int ac, char **av)
-{       
+{
 int from_fd = 0, to_fd = 0;
 ssize_t b;
 char buf[READ_BUF_SIZE];

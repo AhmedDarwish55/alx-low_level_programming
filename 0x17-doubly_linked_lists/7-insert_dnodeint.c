@@ -23,7 +23,7 @@ if (tmp == NULL)
 return (NULL);
 }
 
-if (tmp->next == NULL )
+if (tmp->next == NULL)
 return (add_dnodeint_end(h, n));
 
 new = malloc(sizeof(dlistint_t));
